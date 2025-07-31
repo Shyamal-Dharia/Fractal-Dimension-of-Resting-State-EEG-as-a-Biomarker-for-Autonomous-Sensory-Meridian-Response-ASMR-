@@ -1,0 +1,61 @@
+# Data directories - not included in repository
+asmr/
+control/
+asmr_epochs/
+control_epochs/
+
+# Feature files
+asmr_hfd_features_new_MR/
+control_hfd_features_new_MR/
+asmr_psd_features_new_MR/
+control_psd_features_new_MR/
+
+# Results directories
+hfd_open_eyes_ml_results/
+hfd_closed_eyes_ml_results/
+psd_open_eyes_ml_results/
+psd_closed_eyes_ml_results/
+weights_attn/
+
+# Output plots
+plots/
+plots_psd/
+
+# Generated files
+*.png
+*.jpg
+*.jpeg
+
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large data files
+*.eeg
+*.vhdr
+*.vmrk
+*.fif
+*.npz
+*.csv
+
+# Temporary files
+*.tmp
+*.temp
