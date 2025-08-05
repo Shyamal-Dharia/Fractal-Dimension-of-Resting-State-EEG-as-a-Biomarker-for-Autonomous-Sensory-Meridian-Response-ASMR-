@@ -220,14 +220,13 @@ def load_toy_dataset_example():
     delta_data = hfd_features[:, :, :, 0]  # Shape: (20, 18, 31)
     print(f"Delta band data shape: {delta_data.shape}")
     
-    # Example: Flatten for machine learning (samples x features)
-    # Each sample is one window, features are channels x bands
+  
     n_subjects, n_windows, n_channels, n_bands = hfd_features.shape
     hfd_flat = hfd_features
     labels_flat = labels
     
     print(f"Flattened for ML - Features: {hfd_flat.shape}, Labels: {labels_flat.shape}")
-    
+    # flatten for SVM and Random Forest
     return hfd_features, psd_features, labels
 
 if __name__ == "__main__":

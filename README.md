@@ -140,11 +140,12 @@ subject_0_hfd = hfd_features[0]      # Shape: (18, 31, 5)
 # Example: Get Delta band across all subjects/windows
 delta_data = hfd_features[:, :, :, 0]  # Shape: (20, 18, 31)
 
-# Example: Flatten for ML (each window as separate sample)
 n_subjects, n_windows, n_channels, n_bands = hfd_features.shape
-hfd_flat = hfd_features.reshape(n_subjects * n_windows, n_channels * n_bands)
-labels_flat = labels.flatten()
+hfd_flat = hfd_features
+labels_flat = labels
+
 print(f"ML ready - Features: {hfd_flat.shape}, Labels: {labels_flat.shape}")
+# flatten for SVM and Random Forest
 ```
 
 ## Dependencies
