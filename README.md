@@ -5,7 +5,7 @@ This repository contains the code and analysis for the research paper "Fractal D
 ## Repository Structure
 
 ```
-major_revisions_ASMR/
+Directory/
 ├── README.md
 ├── requirements.txt
 ├── toy_dataset.py
